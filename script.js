@@ -1,11 +1,9 @@
-// toggle icon navbar
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+document.addEventListener("DOMContentLoaded", function () {
+    const button = document.querySelector(".btn");
+    button.addEventListener("click", function () {
+        alert("biết ai đẹp trai nhất chưa!");
+    });
+});
 
-
-menuIcon.onclick = () =>{
-  menuIcon.classList.toggle('bx-x');
-  navbar.classList.toggle('active');
-}
 
 
