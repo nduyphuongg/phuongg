@@ -1,34 +1,125 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hồ sơ cá nhân</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/659a5a5b0ff6374032bd57d2/1hjhf1u88';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+  <!-- box icon -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+     body{
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          -o-user-select: none;
+           user-select: none;
+         }
+</style>
+        
+<script>
+     function killCopy(e){
+           return false;
+     }
+
+     function reEnable(){
+           return true;
+     }
+
+     document.onselectstart=new Function ("return false");
+
+     if (window.sidebar){
+           document.onmousedown=killCopy;
+           document.onclick=reEnable;
+     }
+</script>
+<script type="text/JavaScript">
+var message="NoRightClicking"; function defeatIE() {if (document.all) {(message);return false;}} function defeatNS(e) {if (document.layers||(document.getElementById&&!document.all)) { if (e.which==2||e.which==3) {(message);return false;}}} if (document.layers) {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=defeatNS;} else{document.onmouseup=defeatNS;document.oncontextmenu=defeatIE;} document.oncontextmenu=new Function("return false") 
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 67 || 
+             e.keyCode === 86 || 
+             e.keyCode === 85 || 
+             e.keyCode === 117)) {
+            return false;
+        } else {
+            return true;
+        }
+};
+$(document).keypress("u",function(e) {
+  if(e.ctrlKey)
+  {
+return false;
+}
+else
+{
+return true;
+}
+});
+</script>
+<script>
+  document.addEventListener('keydown', function(event) {
+    if (event.keyCode == 123) {
+      event.preventDefault();
+      alert('Chức năng này đã bị vô hiệu hóa! ');
+      return false;
+    }
+  });
+</script>
 </head>
 <body>
-    <header>
-        <nav>
-            <h2>Profile</h2>
-            <ul>
-                <li><a href="#">Trang Chủ</a></li>
-                <li><a href="#">Về tôi</a></li>
-                <li><a href="#">Dịch vụ</a></li>
-                <li><a href="#">Hồ sơ</a></li>
-                <li><a href="#">Liên lạc</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="header">
+    <a href="#" class="logo">Profile</a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home" class="active">Trang Chủ</a>
+      <a href="#about">Về tôi</a>
+      <a href="#services">Dịch vụ</a>
+      <a href="#portfolio">Hồ sơ</a>
+      <a href="#contact">Liên lạc</a>
 
-    <section class="profile">
-        <div class="profile-text">
-            <h3>Xin chào mọi người, tớ là</h3>
-            <h1>phuongg</h1>
-            <p>Và tớ là <span class="highlight">một người đẹp trai</span></p>
-            <p class="quote">"xuan, ha, thu, dong roi lai xuan." - phuongg</p>
-            <a href="#" class="btn">bí mật</a>
-        </div>
+    </nav>
+  
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      
+      <h3>Xin chào mọi người, tớ là </h3>
+      <h1>phuongg</h1>
+      <h3>Và tớ là <span class="một người đẹp trai"></span> </h3>
+    <div class="vetoi"> <p>xuan, ha, thu, dong roi lai xuan (phuongg)
+      </p></div>
+      <div class="social-media">
+        <a href="https://www.facebook.com/Januarythhhh"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class=''></i></a>
+        <a href="https://www.instagram.com/dphuonggg._/"><i class='bx bxl-instagram-alt' ></i></a>
+        <a href="https://github.com"><i class='bx bxl-github' ></i></a>
+      </div>
+      <a href="#" class="btn" onclick="alert('Đang cập nhật CV!')">Download CV</a>
+    </div>
+  </section>
+
         <div class="profile-img">
             <img src="https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-6/480665545_122213890970233474_7201827871500854081_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=vArrnuEUoj0Q7kNvgFh1UNs&_nc_oc=AdiTe-WZOO_smPQj40H-_-dg8DqKzqmqxh68-w6Ob2WMCIfW8zV_qDldP3yIs8Wv0CX4AyIksGbhzPXKidnVDHSm&_nc_zt=23&_nc_ht=scontent.fsgn2-7.fna&_nc_gid=Axm5HFK345SYaJbxG8albEu&oh=00_AYAr6hDOAhzQ6wuScwiFctR3uHmQy6Xzut1Ziqnjc2UVKA&oe=67BF1971" alt="Hình ảnh của tớ">
         </div>
